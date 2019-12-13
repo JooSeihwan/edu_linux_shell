@@ -1,6 +1,6 @@
 #!/bin/bash
 # using a function in a script
-source $HOME/snippets/color
+source $HOME/linux_shell/lab/snippets/color
 
 function func1 {
 	echo "function func1 has been called"
@@ -21,4 +21,3 @@ echo -e ${URED}"End of the script"$RESET
 # function func2 {
 	# echo "This is an example of a function"
 # }
-

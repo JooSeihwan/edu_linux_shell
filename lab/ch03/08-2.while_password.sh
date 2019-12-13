@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# packages pre-install : mkpasswd, whois
+
 # login script
 read -p "Enter user name : " loginname
 getent passwd $loginname >& /dev/null

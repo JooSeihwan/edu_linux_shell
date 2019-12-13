@@ -20,3 +20,8 @@ mydiv() {
 	else echo "Invalid $2"
 	fi
 }
+
+# .bashrc에 아래 행 추가
+# . /home/vagrant/linux_shell/lab/ch04/myfuncs
+# $ exec bash bash	#logout 필요 없이 bash 바꿔치기
+# $ myadd 10 20

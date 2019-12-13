@@ -12,7 +12,7 @@ count=0;
 
 while read -p "$prompt" -r -s -n 1 char
 do
-	if [ -z $char ]; then			
+	if [ -z $char ]; then
         break
 	elif [[ $char == $'\177' ]];  then
         prompt=$'\b \b'

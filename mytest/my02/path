@@ -1,0 +1,9 @@
+#!/bin/bash
+
+IFS=":"
+for var in $PATH
+do
+  echo $var
+done
+
+#cp path ~/bin

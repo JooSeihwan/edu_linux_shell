@@ -7,14 +7,14 @@ while read server
 do
 	ping -i 2 -c5 "$server" | \
 		while read result
-		do 
-			echo "$(date +%Y-%m-%d_%H%M%S): $result" >> /home/linux/lab/PingTest.$DATE 
-			# echo "$(date +%Y-%m-%d_%H%M%S): $result" | tee -a PingTest_$DATE.log 
+		do
+			echo "$(date +%Y-%m-%d_%H%M%S): $result" >> /home/vagrant/linux_shell/mytest/my02/PingTest.$DATE
+			#echo "$(date +%Y-%m-%d_%H%M%S): $result" | tee -a PingTest_$DATE.log
 		done
 # done < $1
-done < /home/linux/lab/snippets/servers.txt
+done < /home/vagrant/linux_shell/mytest/my02/servers.txt
 
-# execute $ crontab -e 
+# execute $ crontab -e
 # Input as follow at the end of the file
 # * * * * * /home/linux/lab/ch03/09.while_ping.sh
 

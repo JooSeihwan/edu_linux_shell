@@ -7,8 +7,7 @@ do
 	echo $var| cut -f$i -d':'
 done
 
-user=$(getent passwd $input)
+user=$(getent passwd testuser)
 IFS=:
 split=($user)
-printf "%s\n" "${split[@]}" 
-awk -F"${IFS}" '{print $1}' <<< "${split}"
+printf "%s\n" "${split[@]}"

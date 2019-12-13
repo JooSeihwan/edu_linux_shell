@@ -15,5 +15,3 @@ fi
 for list in $dir_list; do
 	echo $list
 done
-
-#echo /* or echo *

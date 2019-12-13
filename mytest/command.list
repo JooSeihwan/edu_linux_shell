@@ -1,9 +1,16 @@
 mkdir 2019-{01..12}
 touch 2019-{01..12}/file-{01..10}
 
-#subshell
+# subshell
 (ls; pwd; echo hello; cd /etc; pwd;)
 
-#diff
+# diff
 ./01.sh(subshell)
 . 01.sh(current shell)
+
+# 복잡한 패스워드 만들기 힌트
+[[ $int =~ ^-?[0-9]+$ ]]
+[[ $int =~ ^-?[a-z]+$ ]]
+	# ^ : 시작부분
+	# -? : 음수인지 확인
+	# + : 1개 이상, 몇개든 OK
