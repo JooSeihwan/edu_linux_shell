@@ -1,0 +1,9 @@
+mkdir 2019-{01..12}
+touch 2019-{01..12}/file-{01..10}
+
+#subshell
+(ls; pwd; echo hello; cd /etc; pwd;)
+
+#diff
+./01.sh(subshell)
+. 01.sh(current shell)
